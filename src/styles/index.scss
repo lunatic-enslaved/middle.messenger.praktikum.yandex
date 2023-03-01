@@ -1,0 +1,21 @@
+@import "node_modules/normalize.css/normalize";
+
+@import "../components/button/button.style.css";
+@import "../components/input/input.style.css";
+@import "../components/card/card.style.css";
+
+@import "../layouts/auth-layout/auth-layout.style.css";
+
+@import "./variables.css";
+
+.app,
+.app-container {
+  height: 100%;
+  width: 100%;
+  background: var(--main-bg-color);
+}
+
+html * {
+  font-family: "Inter", sans-serif;
+  color: white;
+}

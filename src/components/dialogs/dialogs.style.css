@@ -1,0 +1,9 @@
+/* Block */
+.dialogs {
+  background: var(--card-bg-color);
+  width: 320px;
+  height: 100%;
+}
+
+/* Elements */
+/* Modifiers */

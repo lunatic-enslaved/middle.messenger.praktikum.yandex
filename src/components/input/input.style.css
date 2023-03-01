@@ -16,7 +16,7 @@
 }
 
 .input__field {
-  background: #414141;
+  background: var(--field-bg-color);
   border-radius: 4px;
   height: 40px;
   border: none;

@@ -1,5 +1,13 @@
 :root {
+  --icon-outline: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  --icon-filled: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+
+  --navigation-size: 64px;
+
   --main-bg-color: #262626;
+  --on-main-bg-color: #414141;
+
+  --field-bg-color: #414141;
   --card-bg-color: #343434;
 
   --primary-color: #268c61;

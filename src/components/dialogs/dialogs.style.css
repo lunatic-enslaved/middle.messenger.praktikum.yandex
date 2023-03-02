@@ -1,9 +1,109 @@
 /* Block */
 .dialogs {
   background: var(--card-bg-color);
-  width: 320px;
+  width: 420px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--divider-color);
 }
 
 /* Elements */
+.dialogs__search-wrapper {
+  flex: 0 0 auto;
+  height: var(--navigation-size);
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dialogs__search-input {
+  width: 100%;
+}
+.dialogs__search-items {
+  flex: 1 1 auto;
+}
+.dialogs__search-item {
+  height: 72px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.dialogs__items {
+  overflow-y: auto;
+}
+.dialogs__item {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 72px;
+  cursor: pointer;
+}
+.dialogs__item:hover {
+  background: var(--light-bg-color);
+}
+.dialogs__item-avatar {
+  height: 72px;
+  width: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 72px;
+}
+.dialogs__item-content {
+  margin: 16px 0;
+  flex: 1 1 auto;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+}
+.dialogs__item-line {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.dialogs__item-username {
+  flex: 1 1 auto;
+  margin: 0;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 0;
+  margin-right: 4px;
+}
+.dialogs__item-time {
+  flex: 0 0 auto;
+  margin: 0;
+  font-size: 12px;
+  color: var(--on-card-bg-color);
+}
+.dialogs__item-message {
+  flex: 1 1 auto;
+  margin: 0;
+  font-size: 12px;
+  color: var(--on-card-bg-color);
+  align-self: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 0;
+  margin-right: 4px;
+}
+.dialogs__item-received {
+  flex: 0 0 auto;
+  margin: 0;
+  border-radius: 50%;
+  background: var(--unread-message-bg-color);
+  color: var(--on-unread-message-bg-color);
+  height: 16px;
+  width: 16px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dialogs__item-send .dialogs__item-send-icon {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
 /* Modifiers */

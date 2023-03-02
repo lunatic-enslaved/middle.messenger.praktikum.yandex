@@ -1,3 +1,442 @@
 <div class="dialogs">
-  {{> "input/input" placeholder="Поиск..."}}
+  <div class="dialogs__search-wrapper">
+    {{> "input/input" placeholder="Поиск..." hideError="true" class="dialogs__search-input" }}
+  </div>
+
+  <div class="dialogs__items">
+    {{!-- Received message with unread --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">И тут, значит, я достаю из штанин паспорт</p>
+
+            <span class="dialogs__item-received">
+              <span>1</span>
+            </span>
+          </div>
+        </div>
+    </div>     
+
+    {{!-- Sent message with unread --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">А, и че они?</p>
+
+            <span class="dialogs__item-send">
+              <span class="material-symbols-outlined dialogs__item-send-icon">
+                done
+              </span>
+            </span>
+          </div>
+        </div>
+    </div>    
+
+    {{!-- Sent message with read --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">Я не понял, что ты достал?</p>
+
+            <span class="dialogs__item-send">
+              <span class="material-symbols-outlined dialogs__item-send-icon">
+                done_all
+              </span>
+            </span>
+          </div>
+        </div>
+    </div>  
+
+    {{!-- Sent message with read --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">Я не понял, что ты достал?</p>
+
+            <span class="dialogs__item-send">
+              <span class="material-symbols-outlined dialogs__item-send-icon">
+                done_all
+              </span>
+            </span>
+          </div>
+        </div>
+    </div>   
+
+    {{!-- Sent message with read --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">Я не понял, что ты достал?</p>
+
+            <span class="dialogs__item-send">
+              <span class="material-symbols-outlined dialogs__item-send-icon">
+                done_all
+              </span>
+            </span>
+          </div>
+        </div>
+    </div>   
+
+    {{!-- Sent message with read --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">Я не понял, что ты достал?</p>
+
+            <span class="dialogs__item-send">
+              <span class="material-symbols-outlined dialogs__item-send-icon">
+                done_all
+              </span>
+            </span>
+          </div>
+        </div>
+    </div>    
+
+    {{!-- Sent message with read --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">Я не понял, что ты достал?</p>
+
+            <span class="dialogs__item-send">
+              <span class="material-symbols-outlined dialogs__item-send-icon">
+                done_all
+              </span>
+            </span>
+          </div>
+        </div>
+    </div>   
+
+    {{!-- Sent message with read --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">Я не понял, что ты достал?</p>
+
+            <span class="dialogs__item-send">
+              <span class="material-symbols-outlined dialogs__item-send-icon">
+                done_all
+              </span>
+            </span>
+          </div>
+        </div>
+    </div>   
+
+    {{!-- Sent message with read --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">Я не понял, что ты достал?</p>
+
+            <span class="dialogs__item-send">
+              <span class="material-symbols-outlined dialogs__item-send-icon">
+                done_all
+              </span>
+            </span>
+          </div>
+        </div>
+    </div>   
+
+    {{!-- Sent message with read --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">Я не понял, что ты достал?</p>
+
+            <span class="dialogs__item-send">
+              <span class="material-symbols-outlined dialogs__item-send-icon">
+                done_all
+              </span>
+            </span>
+          </div>
+        </div>
+    </div>   
+
+    {{!-- Sent message with read --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">Я не понял, что ты достал?</p>
+
+            <span class="dialogs__item-send">
+              <span class="material-symbols-outlined dialogs__item-send-icon">
+                done_all
+              </span>
+            </span>
+          </div>
+        </div>
+    </div>   
+
+    {{!-- Sent message with read --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">Я не понял, что ты достал?</p>
+
+            <span class="dialogs__item-send">
+              <span class="material-symbols-outlined dialogs__item-send-icon">
+                done_all
+              </span>
+            </span>
+          </div>
+        </div>
+    </div>   
+
+    {{!-- Sent message with read --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">Я не понял, что ты достал?</p>
+
+            <span class="dialogs__item-send">
+              <span class="material-symbols-outlined dialogs__item-send-icon">
+                done_all
+              </span>
+            </span>
+          </div>
+        </div>
+    </div>   
+
+    {{!-- Sent message with read --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">Я не понял, что ты достал?</p>
+
+            <span class="dialogs__item-send">
+              <span class="material-symbols-outlined dialogs__item-send-icon">
+                done_all
+              </span>
+            </span>
+          </div>
+        </div>
+    </div>   
+
+    {{!-- Sent message with read --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">Я не понял, что ты достал?</p>
+
+            <span class="dialogs__item-send">
+              <span class="material-symbols-outlined dialogs__item-send-icon">
+                done_all
+              </span>
+            </span>
+          </div>
+        </div>
+    </div>   
+
+    {{!-- Sent message with read --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">Я не понял, что ты достал?</p>
+
+            <span class="dialogs__item-send">
+              <span class="material-symbols-outlined dialogs__item-send-icon">
+                done_all
+              </span>
+            </span>
+          </div>
+        </div>
+    </div>   
+
+    {{!-- Sent message with read --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">Я не понял, что ты достал?</p>
+
+            <span class="dialogs__item-send">
+              <span class="material-symbols-outlined dialogs__item-send-icon">
+                done_all
+              </span>
+            </span>
+          </div>
+        </div>
+    </div>   
+
+    {{!-- Sent message with read --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">Я не понял, что ты достал?</p>
+
+            <span class="dialogs__item-send">
+              <span class="material-symbols-outlined dialogs__item-send-icon">
+                done_all
+              </span>
+            </span>
+          </div>
+        </div>
+    </div>   
+
+    {{!-- Sent message with read --}}
+    <div class="dialogs__item">
+        <div class="dialogs__item-avatar">
+          {{> 'avatar/avatar' }}
+        </div>
+
+        <div class="dialogs__item-content">
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-username">Маяковский Вова</p>
+            <time datetime="" class="dialogs__item-time">16:32</time>
+          </div>
+          <div class="dialogs__item-line">
+            <p class="dialogs__item-message">Я не понял, что ты достал?</p>
+
+            <span class="dialogs__item-send">
+              <span class="material-symbols-outlined dialogs__item-send-icon">
+                done_all
+              </span>
+            </span>
+          </div>
+        </div>
+    </div>  
+  </div>
 </div>

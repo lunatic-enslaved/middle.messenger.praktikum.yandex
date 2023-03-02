@@ -1,22 +1,18 @@
 <div class="navigation">
-  <div class="navigation__avatar">
-    <span class="material-symbols-outlined navigation__avatar-icon">
-      account_circle
-    </span>
-  </div>
-
+  {{> 'avatar/avatar' class="navigation__avatar" }}
+ 
   <div class="navigation__items">
-    <div class="navigation__item navigation__item--selected">
+    <a href="./chat.hbs" class="navigation__item navigation__item--selected">
       <div class="navigation__item-bar"></div>
       <span class="material-symbols-outlined navigation__item-icon">
         sms
       </span>
-    </div>
-    <div class="navigation__item">
+    </a>
+    <a href="./settings.hbs" class="navigation__item">
       <div class="navigation__item-bar"></div>
       <span class="material-symbols-outlined navigation__item-icon">
         settings
       </span>
-    </div>
+    </a>
   </div>
 </div>

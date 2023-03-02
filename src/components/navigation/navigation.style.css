@@ -14,15 +14,7 @@
 .navigation__avatar {
   height: var(--navigation-size);
   width: var(--navigation-size);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 60px;
-}
-.navigation__avatar-icon {
-  font-size: 48px;
-  color: var(--on-main-bg-color);
-  font-variation-settings: var(--icon-filled)
 }
 .navigation__items {
 }
@@ -36,6 +28,7 @@
   font-variation-settings: var(--icon-outline);
   cursor: pointer;
   position: relative;
+  text-decoration: none;
 }
 .navigation__item-icon {
   font-size: 28px;

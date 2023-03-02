@@ -1,4 +1,4 @@
-<div class="input">
+<div class="input {{class}}">
   <label class="input__label-wrapper">
     <p class="input__label">{{label}}</p>
     <input
@@ -8,5 +8,7 @@
       placeholder="{{placeholder}}"
     />
   </label>
-  <p class="input__error">{{error}}</p>
+  {{#if hideError}}{{else}}
+    <p class="input__error">{{error}}</p>
+  {{/if}}
 </div>

@@ -7,14 +7,15 @@
 @import "../components/dialogs/dialogs.style.css";
 @import "../components/messages/messages.style.css";
 @import "../components/navigation/navigation.style.css";
+@import "../components/avatar-settings/avatar-settings.style.css";
+@import "../components/viewer-data/viewer-data.style.css";
 
 @import "../layouts/auth-layout/auth-layout.style.css";
 @import "../layouts/chat-layout/chat-layout.style.css";
 @import "../layouts/error-layout/error-layout.style.css";
+@import "../layouts/settings-layout/settings-layout.style.css";
 
 @import "./variables.css";
-
-// FIXME: можно ли сделать импорт для normalize.css не в scss файл? тогда можно избавиться от парсера sass для parcel и от расширения scss
 
 .app,
 .app-container {

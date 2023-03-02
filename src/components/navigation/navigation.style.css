@@ -3,7 +3,7 @@
   width: var(--navigation-size);
   min-width: var(--navigation-size);
   max-width: var(--navigation-size);
-  background: var(--main-bg-color)
+  background: var(--main-bg-color);
   height: 100%;
   display: flex;
   flex-direction: column;

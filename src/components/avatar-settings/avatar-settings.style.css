@@ -1,0 +1,31 @@
+/* Block */
+.avatar-settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 204px;
+  width: 204px;
+}
+
+/* Elements */
+.avatar-settings__icon {
+  font-size: 204px;
+  color: var(--field-bg-color);
+  font-variation-settings: var(--icon-filled);
+}
+.avatar-settings__overlay {
+  opacity: 0%;
+  position: absolute;
+  background: var(--main-bg-color);
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar-settings__overlay:hover {
+  opacity: 80%;
+}

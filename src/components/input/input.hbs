@@ -8,7 +8,9 @@
       placeholder="{{placeholder}}"
     />
   </label>
-  {{#if hideError}}{{else}}
+  {{#if hideError}}
+    {{!  }}
+  {{else}}
     <p class="input__error">{{error}}</p>
   {{/if}}
 </div>

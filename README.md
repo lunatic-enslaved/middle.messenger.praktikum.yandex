@@ -25,6 +25,7 @@
 ## Исходные данные
 
 - [Дизайн в Figma](https://www.figma.com/file/Yr5lpCtOX6SIl1MrZy9wlB/Chat_external_link-(Copy)?node-id=0%3A1&t=9qes3Xlent0Wr0Xr-0)
+- [Деплой на Netlify](https://remarkable-strudel-5cd1b8.netlify.app/)
 
 ## Установка 
 

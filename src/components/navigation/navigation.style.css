@@ -1,0 +1,53 @@
+/* Blocks */
+.navigation {
+  width: var(--navigation-size);
+  min-width: var(--navigation-size);
+  max-width: var(--navigation-size);
+  background: var(--main-bg-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Elements */
+.navigation__avatar {
+  height: var(--navigation-size);
+  width: var(--navigation-size);
+  margin-bottom: 60px;
+}
+.navigation__items {
+}
+.navigation__item {
+  width: var(--navigation-size);
+  height: 48px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-variation-settings: var(--icon-outline);
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+.navigation__item-icon {
+  font-size: 28px;
+  color: var(--on-main-bg-color);
+}
+.navigation__item-bar {
+  display: none;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  background: var(--primary-color);
+}
+
+/* Modifiers */
+.navigation__item--selected .navigation__item-icon {
+  font-variation-settings: var(--icon-filled);
+  color: var(--primary-color);
+}
+.navigation__item--selected .navigation__item-bar {
+  display: block;
+}

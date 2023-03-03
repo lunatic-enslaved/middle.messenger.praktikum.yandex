@@ -1,0 +1,16 @@
+{{#extend "settings-layout/settings-layout"}}
+  {{#content "content"}}
+    <div>
+        <div>
+            <h2>Изменить аватар</h2>
+            <a href="./settings.hbs">Назад</a>
+        </div>
+        
+
+        {{#> card/card className="auth-layout___card" }}
+            {{> 'input/input' type="file" label="Выберите файл" name="avatar" error="" }}
+            {{> 'button/button' text="Сохранить" }}
+        {{/card/card}}
+    </div>
+  {{/content}}
+{{/extend}}

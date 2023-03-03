@@ -1,0 +1,60 @@
+/* Block */
+.messages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Elements */
+.messages__header {
+  flex: 0 0 auto;
+  height: var(--navigation-size);
+  background: var(--card-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 16px;
+}
+.messages__list {
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+.messages__input {
+  flex: 0 0 auto;
+  height: var(--navigation-size);
+  background: var(--card-bg-color);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+.messages__input-field {
+  flex: 1 1 auto;
+  margin-right: 16px;
+}
+.messages__partner-name {
+  margin: 0;
+}
+.messages__partner-status {
+  color: var(--on-card-bg-color);
+  fint-size: 12px;
+  margin: 0;
+  margin-top: 4px;
+}
+.messages__input-button {
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+.messages__attach-icon {
+  font-variation-settings: var(--icon-filled);
+  color: var(--on-card-bg-color);
+}
+.messages__list-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.messages__empty-text {
+  color: var(--on-main-bg-color);
+}

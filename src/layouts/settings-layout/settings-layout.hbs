@@ -1,0 +1,17 @@
+<html lang="ru">
+  {{> 'head/head' title="Чат | Диалоги"}}
+
+  <body>
+    <div class="app">
+      <main class="app-container">
+        <div class="settings-layout"> 
+            {{> "navigation/navigation"}}
+
+            <div class="settings-layout__content">
+              {{{block "content"}}}
+            </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+@import "node_modules/normalize.css/normalize";
+
+@import "../components/button/button.style.css";
+@import "../components/input/input.style.css";
+@import "../components/card/card.style.css";
+@import "../components/avatar/avatar.style.css";
+@import "../components/dialogs/dialogs.style.css";
+@import "../components/messages/messages.style.css";
+@import "../components/navigation/navigation.style.css";
+@import "../components/avatar-settings/avatar-settings.style.css";
+@import "../components/viewer-data/viewer-data.style.css";
+
+@import "../layouts/auth-layout/auth-layout.style.css";
+@import "../layouts/chat-layout/chat-layout.style.css";
+@import "../layouts/error-layout/error-layout.style.css";
+@import "../layouts/settings-layout/settings-layout.style.css";
+
+@import "./variables.css";
+
+.app,
+.app-container {
+  height: 100%;
+  width: 100%;
+  background: var(--main-bg-color);
+}
+
+html * {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-bar-color) var(--scroll-bar-bg-color);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scroll-bar-color);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar-bg-color);
+  border-radius: 20px;
+  border: 3px solid var(--scroll-bar-color);
+}

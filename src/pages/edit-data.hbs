@@ -1,0 +1,30 @@
+---
+email: 'maiak@yandex.ru'
+login: 'maiak'
+first_name: 'Вова'
+second_name: 'Маяковский'
+display_name: 'Vovam'
+phone: '+7 (800) 555 35 35'
+---
+
+{{#extend "settings-layout/settings-layout"}}
+  {{#content "content"}}
+    <div>
+        <div>
+            <h2>Изменить данные</h2>
+            <a href="./settings.hbs">Назад</a>
+        </div>
+
+        {{#> 'card/card' className="auth-layout___card" }}
+            {{> 'input/input' type="text" label="E-mail" name="email" error="" value=this.email }}
+            {{> 'input/input' type="text" label="Логин" name="login" error="" value=this.login }}
+            {{> 'input/input' type="text" label="Имя" name="first_name" error="" value=this.first_name }}
+            {{> 'input/input' type="text" label="Фамилия" name="second_name" error="" value=this.second_name }}
+            {{> 'input/input' type="text" label="Имя в чате" name="display_name" error="" value=this.display_name }}
+            {{> 'input/input' type="text" label="Телефон" name="phone" error="" value=this.phone }}
+
+            {{> 'button/button' text="Сохранить" }}
+        {{/card/card}}
+    </div>
+  {{/content}}
+{{/extend}}

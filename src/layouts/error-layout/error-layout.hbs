@@ -1,0 +1,15 @@
+<html lang="ru">
+  {{> 'head/head' title="Чат | Ошибка 500"}}
+
+  <body>
+    <div class="app">
+      <main class="app-container">
+        <div class="error-layout">
+          <h1 class="error-layout__code">{{{block "error-code"}}}</h1>
+          <p class="error-layout__text">{{{block "error-text"}}}</p>
+          <a  class="error-layout__link" href="{{{block 'link'}}}">Назад к чатам</a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

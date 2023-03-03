@@ -1,0 +1,28 @@
+:root {
+  --icon-outline: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  --icon-filled: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+
+  --scroll-bar-color: #303030;
+  --scroll-bar-bg-color: #353535;
+
+  --unread-message-bg-color: #c94343;
+  --on-unread-message-bg-color: #fff;
+
+  --navigation-size: 64px;
+  --divider: 1px solid #414141;
+
+  --main-bg-color: #262626;
+  --on-main-bg-color: #414141;
+
+  --secondary-bg-color: #303030;
+
+  --card-bg-color: #343434;
+  --on-card-bg-color: #a9a9a9;
+
+  --field-bg-color: #414141;
+
+  --light-bg-color: #545454;
+
+  --primary-color: #268c61;
+  --on-primary-color: #fff;
+}

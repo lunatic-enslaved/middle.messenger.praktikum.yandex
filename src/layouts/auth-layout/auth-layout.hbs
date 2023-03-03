@@ -1,0 +1,21 @@
+<html lang="ru">
+  {{> 'head/head' title="Чат | Войти"}}
+
+  <body>
+    <div class="app">
+      <main class="app-container">
+        <div class="auth-layout">
+          {{#> card/card className="auth-layout___card" }}
+            <h1 class="auth-layout___header">
+                {{{block "title"}}}
+            </h1>
+            
+            {{{block "form"}}}
+
+            {{{block "append"}}}
+          {{/card/card}}
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -20,7 +20,7 @@ data:
         value: '+7 (800) 555 35 35'
 ---
 
-{{#extend "settings-layout/settings-layout"}}
+{{#extend "settings-layout/settings-layout" pageDescription="Страница с личными данными авторизованного пользователя"}}
   {{#content "content"}}
     {{> 'avatar-settings/avatar-settings' }}
 
@@ -28,16 +28,10 @@ data:
 
     {{> 'viewer-data/viewer-data' data}}
     
-    <div>
-        <p>
-            <a href="./edit-data.hbs">Изменить данные</a>
-        </p>
-        <p>
-            <a href="./edit-password.hbs">Изменить пароль</a>
-        </p>
-        <p>
-            <a href="./edit-avatar.hbs">Изменить аватар</a>
-        </p>
-    </div>
+    <nav>
+        <a href="./edit-data.hbs">Изменить данные</a>
+        <a href="./edit-password.hbs">Изменить пароль</a>
+        <a href="./edit-avatar.hbs">Изменить аватар</a>
+    </nav>
   {{/content}}
 {{/extend}}

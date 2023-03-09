@@ -1,10 +1,11 @@
-<html lang="en">
-  {{> 'head/head' title="Чат | Все страницы"}}
+<!doctype html>
+<html lang="ru">
+  {{> 'head/head' title="Чат | Все страницы" pageDescription=pageDescription }}
 
   <body>
     <div class="app">
       <main class="app-container">
-        {{{body}}}
+        {{{block "body"}}}
       </main>
     </div>
   </body>

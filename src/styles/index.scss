@@ -17,6 +17,8 @@
 
 @import "./variables.css";
 
+html,
+body,
 .app,
 .app-container {
   height: 100%;
@@ -29,6 +31,7 @@ html * {
   color: white;
 }
 
+/* Scrollbar */
 /* Works on Firefox */
 * {
   scrollbar-width: thin;

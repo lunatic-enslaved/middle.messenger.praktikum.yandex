@@ -1,5 +1,6 @@
+<!doctype html>
 <html lang="ru">
-  {{> 'head/head' title="Чат | Войти"}}
+  {{> 'head/head' title="Чат | Войти" pageDescription=pageDescription }}
 
   <body>
     <div class="app">
@@ -7,7 +8,7 @@
         <div class="auth-layout">
           {{#> card/card className="auth-layout___card" }}
             <h1 class="auth-layout___header">
-                {{{block "title"}}}
+              {{{block "title"}}}
             </h1>
             
             {{{block "form"}}}

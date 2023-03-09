@@ -11,7 +11,9 @@
   </div>
 
   <div class="messages__input">
-    {{> "input/input" placeholder="Введите сообщение..." hideError="true" class="messages__input-field" name="message" }}
+    <form action="" class="messages__input-form">
+      {{> "input/input" placeholder="Введите сообщение..." hideError="true" name="message" }}
+    </form>
     <span role="button" class="messages__input-button">
         <span class="material-symbols-outlined messages__attach-icon">
             attach_file

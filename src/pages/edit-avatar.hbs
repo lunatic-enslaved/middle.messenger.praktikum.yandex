@@ -1,4 +1,4 @@
-{{#extend "settings-layout/settings-layout"}}
+{{#extend "settings-layout/settings-layout" pageDescription="Страница редактирования аватара авторизованного пользователя"}}
   {{#content "content"}}
     <div>
         <div>
@@ -8,8 +8,10 @@
         
 
         {{#> card/card className="auth-layout___card" }}
+          <form action="">
             {{> 'input/input' type="file" label="Выберите файл" name="avatar" error="" }}
-            {{> 'button/button' text="Сохранить" }}
+            {{> 'button/button' text="Сохранить" type="submit" }}
+          </form>
         {{/card/card}}
     </div>
   {{/content}}

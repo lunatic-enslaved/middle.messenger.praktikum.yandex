@@ -1,0 +1,30 @@
+{
+  "name": "yandex-praktikum.middle-react.module1-chat",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel src/pages/index.hbs --no-cache --port 3000 --open",
+    "build": "parcel build src/pages/index.hbs",
+    "start": "npm run build && node ./server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@anikin/parcel-transformer-handlebars": "1.0.9",
+    "@parcel/packager-raw-url": "2.8.3",
+    "@parcel/transformer-sass": "2.8.3",
+    "@parcel/transformer-webmanifest": "2.8.3",
+    "@tsconfig/recommended": "1.0.2",
+    "express": "4.18.2",
+    "parcel": "2.8.3",
+    "postcss": "8.4.21",
+    "postcss-import": "15.1.0"
+  },
+  "dependencies": {
+    "normalize.css": "8.0.1"
+  },
+  "engines": {
+    "node": ">= 12"
+  }
+}

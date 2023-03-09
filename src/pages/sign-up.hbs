@@ -1,0 +1,28 @@
+{{#extend "auth-layout/auth-layout" pageDescription="Страница регистрации"}}
+  {{#content "title"}}
+    Зарегистрироваться
+  {{/content}}
+
+  {{#content "form"}}
+    <form class="auth-layout___form">
+      <div class="auth-layout___inputs">
+          {{> 'input/input' type="text" label="E-mail" name="email" error="" placeholder="Введите e-mail"  }}
+          {{> 'input/input' type="text" label="Логин" name="login" error="" placeholder="Введите логин"  }}
+          {{> 'input/input' type="text" label="Имя" name="first_name" error="" placeholder="Иван"  }}
+          {{> 'input/input' type="text" label="Фамилия" name="second_name" error="" placeholder="Иванов" }}
+          {{> 'input/input' type="text" label="Телефон" name="phone" error="" placeholder="+7 (800) 555-35-35" }}
+          {{> 'input/input' type="password" label="Пароль" name="password" error="" placeholder="Введите пароль" }}
+          {{> 'input/input' type="password" label="Повторите пароль" name="passwordRepeat" error="" placeholder="Повторите пароль" }}
+      </div>
+
+      {{> 'button/button' type="submit" text="Зарегистрироваться" class="auth-layout___button" }}
+    </form>
+  {{/content}}
+
+  {{#content "append"}}
+    <p class="auth-layout__hint">
+      Уже есть аккаунт?
+      <a href="./sign-in.hbs">Войти</a>
+    </p>
+  {{/content}}
+{{/extend}}

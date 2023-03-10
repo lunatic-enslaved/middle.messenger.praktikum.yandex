@@ -1,0 +1,13 @@
+/* Block */
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Elements */
+.avatar__icon {
+  font-size: 48px;
+  color: var(--field-bg-color);
+  font-variation-settings: var(--icon-filled);
+}

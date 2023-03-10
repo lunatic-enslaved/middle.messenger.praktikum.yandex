@@ -1,0 +1,23 @@
+{{#extend "auth-layout/auth-layout" pageDescription="Страница авторизации"}}
+  {{#content "title"}}
+    Войти
+  {{/content}}
+
+  {{#content "form"}}
+    <form class="auth-layout___form">
+      <div class="auth-layout___inputs">
+          {{> 'input/input' type="text" label="Логин" name="login" error="" placeholder="Введите логин" }}
+          {{> 'input/input' type="password" label="Пароль" name="password" error="" placeholder="Введите пароль" }}
+      </div>
+
+      {{> 'button/button' type="submit" text="Войти" class="auth-layout___button" }}
+    </form>
+  {{/content}}
+
+  {{#content "append"}}
+    <p class="auth-layout__hint">
+      Нет аккаунта?
+      <a href="./sign-up.hbs">Зарегистрироваться</a>
+    </p>
+  {{/content}}
+{{/extend}}

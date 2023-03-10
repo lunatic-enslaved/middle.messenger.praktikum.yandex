@@ -1,0 +1,23 @@
+<div class="messages">
+  <div class="messages__header">
+    <p class="messages__partner-name">Маяковский Вова</p>
+    <p class="messages__partner-status">онлайн</p>
+  </div>
+
+  <div class="messages__list">
+    <div class="messages__list-empty">
+        <p class="messages__empty-text">Пока нет сообщений</p>
+    </div>
+  </div>
+
+  <div class="messages__input">
+    <form action="" class="messages__input-form">
+      {{> "input/input" placeholder="Введите сообщение..." hideError="true" name="message" }}
+    </form>
+    <span role="button" class="messages__input-button">
+        <span class="material-symbols-outlined messages__attach-icon">
+            attach_file
+        </span>
+    </span>
+  </div>
+</div>

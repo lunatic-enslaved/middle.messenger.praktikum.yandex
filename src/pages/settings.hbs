@@ -1,0 +1,37 @@
+---
+data:
+    -
+        label: 'Почта'
+        value: 'maiak@yandex.ru'
+    -
+        label: 'Логин'
+        value: 'maiak'
+    -
+        label: 'Имя'
+        value: 'Вова'
+    -
+        label: 'Фамилия'
+        value: 'Маяковский'
+    -
+        label: 'Имя в чате'
+        value: 'Vovam'
+    -
+        label: 'Телефон'
+        value: '+7 (800) 555 35 35'
+---
+
+{{#extend "settings-layout/settings-layout" pageDescription="Страница с личными данными авторизованного пользователя"}}
+  {{#content "content"}}
+    {{> 'avatar-settings/avatar-settings' }}
+
+    <h2>Маяковский Вова</h2>
+
+    {{> 'viewer-data/viewer-data' data}}
+    
+    <nav>
+        <a href="./edit-data.hbs">Изменить данные</a>
+        <a href="./edit-password.hbs">Изменить пароль</a>
+        <a href="./edit-avatar.hbs">Изменить аватар</a>
+    </nav>
+  {{/content}}
+{{/extend}}
